@@ -60,6 +60,7 @@ export const Plataformas = styled.ul`
     font-weight: bold;
   }
 `
+
 export const BtnComprar = styled.button`
   display: block;
   width: 100%;
@@ -84,5 +85,16 @@ export const BtnComprar = styled.button`
       ${cores.corPrincipal},
       ${cores.corSecundaria}
     );
+  }
+`
+export const BtnFavorito = styled(BtnComprar)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  svg {
+    font-size: 22px;
+    path {
+      color: ${cores.corFundo};
+    }
   }
 `
